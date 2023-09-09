@@ -1,0 +1,29 @@
+.hero {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    @include title;
+  }
+  &__desc {
+    color: $two-main-color;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 9px;
+    margin-bottom: 35px;
+  }
+  &__btn {
+    @include btn;
+    background: $color;
+    &:last-child {
+      background: transparent;
+      border: 1px solid $main-color;
+      margin-left: 18px;
+    }
+  }
+}

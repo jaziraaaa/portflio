@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    &__desc{
+        color: $input-placeholder-color;
+        font-family: "DM Sance", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,67 @@
+.touch {
+  margin-top: 100px;
+  &__title {
+    @include title;
+    text-align: center;
+    margin-bottom: 82px;
+  
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+  }
+  &__input {
+    color: $main-color;
+    font-family: "DM Sance", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    width: 358px;
+    border-bottom: 1px solid $input-placeholder-color;
+    padding: 10px;
+    margin-bottom: 47px;
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+    &:hover {
+color: green;
+background: #a8a9a8;
+
+    }
+  }
+
+  &__desc {
+    color: $main-color;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    border-bottom: 1px solid $input-placeholder-color;
+    padding: 10px;
+    width: 750px;
+    height: 109px;
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+    &:hover{
+        background: #989797;
+        
+    }
+  }
+  &__btn {
+    @include btn;
+    background: $color;
+    margin-top: 29px;
+  }
+}

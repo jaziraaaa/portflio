@@ -1,0 +1,26 @@
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    color: $main-color;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__link {
+    color: $main-color;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    margin: 0 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
